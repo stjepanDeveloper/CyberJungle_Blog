@@ -1,0 +1,384 @@
+body {
+    background-image: url('/public/images/Cyberpunk-City-Street-Scifi-Wallpaper-Graphics-74866949-1.jpg');
+    background-size: cover; /* Ensures the background image covers the entire body */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    font-family: 'Cyberpunk', sans-serif;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    margin: 0; /* Remove default margin to ensure full coverage */
+    
+}
+
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('/public/fonts/Cybrpnuk2.ttf') format('truetype'); /* Adjust the path accordingly */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;  
+    flex-grow: 1;
+  }
+
+.navbar-brand {
+    color: #62e417; /* Lightning yellow neon color */
+    font-family: 'Cyberpunk', sans-serif; /* Use your custom font here */
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.brand-container svg {
+    fill: magenta; /* Changes SVG color */
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+  }
+
+.site-header {
+    display: flex;
+    justify-content: space-between; /* Adjust based on design preference */
+    align-items: center;
+    padding: 1rem;
+    background-color: #FFFF00;
+  }
+
+
+  .site-nav .nav-list {
+    display: flex;
+    justify-content: center; /* Center the list items */
+    padding: 0;
+    margin: 0 auto; /* Center the list in the nav */
+    list-style-type: none;
+    font-size: 1.5rem;
+  }
+  
+
+  .site-nav .nav-list .nav-item {
+    margin-right: 20px; /* Adds some space between items */
+  }
+  
+  .site-nav .nav-list .nav-item:last-child {
+    margin-right: 0; /* Removes margin from the last item */
+  }
+  
+  
+  /* Styles for the navigation links */
+  .site-nav .nav-list .nav-item .nav-link {
+    color: magenta;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .site-nav .nav-list .nav-item .nav-link:hover {
+    color: #271c1c; /* Example hover color */
+  }
+  
+  /* Styles for the logout button */
+  .logout-button {
+    background-color: #f44336; /* Example background color for logout button */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+  }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+}
+
+.footer-text {
+    color: #00FF00; /* Neon green color */
+    font-family: 'YourCustomFont', sans-serif; /* Use your custom font here */
+}
+
+.home-title {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 5em;
+    color: #FFFF00;
+}
+
+.post-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    text-align: center;
+    margin: 50px 0 20px;
+    color: #FFFF00;
+}
+
+.post-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Added margin-bottom of 20px */
+    color: #00FF00; /* Neon green color for post content */
+}
+
+.post-details {
+    color: #00FF00;
+    margin-bottom: 20px;
+
+}
+
+.contact-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: #FFFF00;
+}
+
+/* Center the content on the contact page */
+.contact-content {
+    text-align: center;
+    color: #00FF00;
+}
+
+/* Style the contact information */
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #FFFF00; 
+}
+
+.link-text {
+    color:  #00FF00;
+}
+
+.about-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: #FFFF00;
+}
+
+.about-content {
+    text-align: center;
+    color: #00FF00; /* Neon green color */
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center-align the paragraph */
+}
+
+.delete-btn, .edit-btn {
+    display: block;
+    margin: 0 auto; /* Center-align the buttons */
+    text-align: center; /* Center-align the text within the buttons */
+    padding: 10px; /* Add padding to the buttons */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-weight: bold; /* Make the text bold */
+    width: 100px; /* Set the desired width for the buttons */
+}
+
+.edit-btn {
+    background-color: yellow; /* Yellow color for edit button */
+    color: #000; /* Black text color for edit button */
+}
+
+/* Example: Add a bit of margin to separate the buttons */
+.delete-btn {
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.create-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Use the full height of the viewport */
+    text-align: center;
+    color: #FFFF00;
+}
+
+.create-post-container form {
+    max-width: 400px; /* Adjust based on your preference */
+    width: 100%;
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Optional: Adds some padding inside the form */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+    border-radius: 8px; /* Optional: Rounds the corners of the form */
+    margin-bottom: 100px;
+}
+
+
+form[action="/create"] input[type="text"],
+form[action="/create"] textarea {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #FFFF00;
+    color: #000;
+}
+
+form[action="/create"] button {
+    display: block;
+    margin: 0 auto;
+    background-color: #00FF00;
+}
+
+form[action="/create"] {
+    color: #00FF00;
+}
+
+.create-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: #FFFF00; 
+}
+
+form[action^="/edit"] input[type="text"],
+form[action^="/edit"] textarea {
+    width: 80%; /* Adjust the width as needed */
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #FFFF00;
+    color:#000; /* Neon green text color for better visibility */
+}
+
+form[action^="/edit"] button {
+    display: block;
+    margin: 10px auto; /* Added margin for better spacing */
+    background-color: #00FF00 ; /* Yellow color for the button */
+    color: #FF0000; /* Red color for text on the button */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form[action^="/edit"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #00FF00;
+    margin-top: 20px; /* Added top margin for spacing from the header */
+}
+
+
+.edit-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/* Pagination Container */
+.pagination-container {
+    text-align: center; /* Center-align the pagination */
+    margin-top: 40px; /* Add some space above the pagination */
+    margin-bottom: 20px; /* Add some space below the pagination, before the footer if present */
+}
+
+/* Pagination Links Styling */
+.pagination-container a {
+    color: #00FF00; /* Neon green color to match the site's theme */
+    margin: 0 5px; /* Space out the pagination links */
+    padding: 5px 10px; /* Padding for better clickability */
+    background-color: transparent; /* Transparent background or choose a color */
+    border: 1px solid #00FF00; /* Border to make it more visible */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Cyberpunk', sans-serif; /* Consistent font */
+}
+
+.pagination-container a:hover,
+.pagination-container a.active {
+    background-color: #00FF00; /* Change background on hover/active */
+    color: #000000; /* Text color change for contrast */
+}
+
+.pagination-info {
+    color: #00FF00; /* White text for visibility */
+    padding: 0 10px;
+  }
+
+  button {
+    background-color: #ecdcdc;
+    color: #20f01c;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #ecdada;
+  }
+
+  form input[type="text"] {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #6ef02d;
+  }
+  
+  form button[type="submit"] {
+    padding: 10px 15px;
+  }
+
+  .sorting-container {
+    margin-bottom: 20px;
+  }
+
+  .auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Use the full height of the viewport */
+    text-align: center;
+    color: #FFFF00;
+  }
+  
+  .auth-container form {
+    max-width: 400px; /* Adjust based on your preference */
+    width: 100%;
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  .auth-container form div {
+    margin-bottom: 15px; /* Space out the form elements */
+  }
+  
+  .auth-container form button {
+    width: 100%; /* Make the button expand to the full width of the form */
+    padding: 10px; /* Adjust based on your preference */
+  }
+  
+  /* Additional styling for inputs and labels as needed */
+  .auth-container form input {
+    width: 100%; /* Full width */
+    padding: 8px; /* Adjust based on your preference */
+    margin-top: 5px; /* Space after the label */
+    border: 1px solid #ccc; /* Optional: adds a light border for better input visibility */
+  }
+
+  .auth-container form div input[type="email"] {
+    color: black !important;/* Even more specifically targets password inputs */
+    background-color: #FFFF00;
+  }
+
+  .auth-container form div input[type="password"] {
+    color: black !important;/* Even more specifically targets password inputs */
+    background-color: #00FF00;
+  }
+
+  .auth-container a {
+    color: #00FF00;
+  }
+  
+  .auth-container form label {
+    display: block; /* Ensure labels are above inputs */
+  }
